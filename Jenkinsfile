@@ -6,7 +6,7 @@ pipeline {
       steps {
         script {
             ansiblePlaybook(            
-                playbook: 'playbook.yml',
+                playbook: 'playbook.yaml',
                 inventory: 'inventory',
                 credentialsID: 'JenkinsSSH',
                 disableHostKeyChecking: true,
