@@ -11,7 +11,7 @@ pipeline {
                 credentialsID: 'JenkinsSSH',
                 disableHostKeyChecking: true,
                 vaultTmpPath:''
-                )         
+                )       
               }
             }
         }
