@@ -6,5 +6,5 @@
     - name: Instalar apache
       apt:
         name: httpd
-        state: present
+        state: latest
 ---
