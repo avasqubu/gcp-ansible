@@ -5,13 +5,14 @@ pipeline {
     stage('Ansible') {
       steps {
         script {
-            ansiblePlaybook
-                playbook: 'playbook.yml'
-                inventory: 'inventory'
-                credentialsID: 'JenkinsSSH'
-                disableHostKeyChecking: true
+            ansiblePlaybook(            
+                playbook: 'playbook.yml',
+                inventory: 'inventory',
+                credentialsID: 'JenkinsSSH',
+                disableHostKeyChecking: true,
                 vaultTmpPath:''
-                }
+                )         
+              }
             }
         }
     }
