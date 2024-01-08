@@ -1,0 +1,10 @@
+---
+- name: Ansible en GCP
+  host: grupo1
+  become: yes
+  task:
+    - name: Instalar apache
+      apt:
+        name: httpd
+        state: latest
+---
